@@ -42,13 +42,14 @@ html {
 }
 
 .clockface:hover .hand-hour {
-    transform: rotate(-360deg);
-    transition: all 3000ms linear;
+    transform: rotate(360deg);
+    transition: all 6s linear;
+    
 }
 
 .clockface:hover .hand-minute {
-    transform: rotate(360deg);
-    transition: all 2000ms linear;
+    transform: rotate(4320deg);
+    transition: all 6s linear;
 }
 
 .hand {
@@ -56,14 +57,14 @@ html {
     width: 14px;
     bottom: 50%;
     left: calc(50% - 7px);
+    transform-origin: center bottom;
 }
 
 .hand-hour{
-
-    
+   
 }
 
 .hand-minute{
-    
+
 }
 

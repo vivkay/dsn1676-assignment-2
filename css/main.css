@@ -12,6 +12,7 @@ html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
+    text-align: center;
 }
 
 *, *::before, *::after {
@@ -22,15 +23,12 @@ html {
    background-color: black;
 }
 
-.main {
- 
-}
-
 .clockface {
     background-image: url(../img/clock-face.svg);
     position: relative;
     width: 300px;
     height: 300px;
+    margin: 0 auto;
 }
 
 .center {
@@ -70,18 +68,32 @@ html {
     color: white;
     text-decoration: none;
     border-radius: 50%;
-    width: 6em;
-    line-height: 6em;
+    width: 8em;
+    line-height: 8em;
     display: inline-block;
     text-align: center;
+    transition: all 250ms linear;
+    font-family: sans-serif;
 }
 
 .btn-forwards {
     background-color: green;
+    margin: 2em;
+}
+
+.btn-forwards:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-backwards:hover {
+    background-color: white;
+    color: black;
 }
 
 .btn-backwards {
     background-color: red;
+    margin: 2em;
 }
 
 

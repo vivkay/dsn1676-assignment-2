@@ -41,15 +41,12 @@ html {
     left: calc(50% - 14px);
 }
 
-.clockface:hover .hand-hour {
-    transform: rotate(360deg);
-    transition: all 6s linear;
-    
+.clockface:target .hand-hour {
+    transform: rotate(360deg);    
 }
 
-.clockface:hover .hand-minute {
-    transform: rotate(4320deg);
-    transition: all 6s linear;
+.clockface:target .hand-minute {
+    transform: rotate(4320deg);   
 }
 
 .hand {
@@ -58,8 +55,9 @@ html {
     bottom: 50%;
     left: calc(50% - 7px);
     transform-origin: center bottom;
+    transition: all 6s linear;
 }
-
+    
 .hand-hour{
    
 }
@@ -67,4 +65,25 @@ html {
 .hand-minute{
 
 }
+
+.btn {
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 6em;
+    line-height: 6em;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-forwards {
+    background-color: green;
+}
+
+.btn-backwards {
+    background-color: red;
+}
+
+
+
 
